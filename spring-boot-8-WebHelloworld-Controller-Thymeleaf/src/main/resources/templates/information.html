@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Information Register</title>
+</head>
+<body>
+    Tên:<h3 th:text="${ten} + haha"> </h3><br>
+    Tuổi:<h3 th:text="${tuoi}"> </h3><br>
+    Địa chỉ:<h3 th:text="${diachi}"> </h3><br>
+    <p th:utext="#{home.welcome}"></p>
+
+    <a href="register">Quay lại form đăng kí</a>
+</body>
+</html>
