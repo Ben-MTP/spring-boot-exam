@@ -51,10 +51,17 @@ public class RestApiController {
         return ResponseEntity.ok().build();
     }
 
+    // Using ResponseEntity -> format Response JSON:
     @PostMapping("/todo")
     public ResponseEntity addTodo(@RequestBody Todo todo){
         todoList.add(todo);
         return ResponseEntity.ok().body(todo);
     }
+
+    /**
+     * Lấy thông tin user trả về một chuỗi JSON bằng request:
+     */
+
+
 
 }
