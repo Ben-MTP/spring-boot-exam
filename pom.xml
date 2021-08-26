@@ -8,6 +8,11 @@
         <module>spring-boot-9-thymeleaf-Expression-DemoFull</module>
         <module>spring-boot-1-1-injection</module>
         <module>pojo-1-intro</module>
+        <module>spring-boot-11-JPA-MySQL</module>
+        <module>spring-boot-12-JPA-Method-Query</module>
+        <module>spring-boot-13-Thymeleaf-MySQL-i18n-WebDemo</module>
+        <module>spring-boot-14-RestfullApi-RestController-PathVairable-RequestBody</module>
+        <module>spring-boot-15-ExceptionHandler-RestControllerAdvice-ControllerAdvice-ResponseStatus</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

@@ -9,3 +9,10 @@
 ##3 Tóm lược
 
 1. Tạo một class POJO cơ bản: EmployeePojo(firstName, loadName, LocalData startDate.)
+
+
+##Reference:
+1. POJO và JavaBean khác nhau như thế nào?
+   https://shareprogramming.net/pojo-va-javabean-khac-nhau-nhu-the-nao/
+   
+2. 
