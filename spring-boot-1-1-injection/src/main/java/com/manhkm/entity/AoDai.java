@@ -1,5 +1,6 @@
 package com.manhkm.entity;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 /**
@@ -7,6 +8,7 @@ import org.springframework.stereotype.Component;
  * @project spring-boot-exam
  */
 @Component("aoDai")
+//@Primary
 public class AoDai implements Outfit{
     @Override
     public void wear() {

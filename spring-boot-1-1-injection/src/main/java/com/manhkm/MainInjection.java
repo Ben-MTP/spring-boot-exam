@@ -22,11 +22,9 @@ public class MainInjection {
         ApplicationContext context = SpringApplication.run(MainInjection.class);
         System.out.println("Running Spring Boot Application!");
 
-        Outfit outfit1 = context.getBean(Outfit.class);
-        System.out.println("===> Outfit: " + outfit1);
-
-        Girl girl = new Girl();
-        girl.setOutfit(outfit1);
+        Girl girl = context.getBean(Girl.class);
+        System.out.println("Girl instance: " + girl);
+        System.out.println("Girl outfit: " + girl.getOutfit());
         girl.getOutfit().wear();
     }
 }
