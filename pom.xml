@@ -14,6 +14,7 @@
         <module>spring-boot-14-RestfullApi-RestController-PathVairable-RequestBody</module>
         <module>spring-boot-15-ExceptionHandler-RestControllerAdvice-ControllerAdvice-ResponseStatus</module>
         <module>spring-boot-2-Autowired-Primary-Qualifier</module>
+        <module>spring-boot-3-BeanLifeCycle-PostConstruct-PreDestroy</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
