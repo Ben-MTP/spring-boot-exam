@@ -17,6 +17,7 @@
         <module>spring-boot-3-BeanLifeCycle-PostConstruct-PreDestroy</module>
         <module>spring-boot-4-Component-Service-Repository</module>
         <module>spring-boot-5-ComponentScan</module>
+        <module>spring-boot-6-Configuration-Bean</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

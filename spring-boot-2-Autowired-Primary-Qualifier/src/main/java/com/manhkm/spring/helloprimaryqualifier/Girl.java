@@ -14,6 +14,10 @@ import org.springframework.stereotype.Component;
  *              -> KQ -> trả về OK
  *      + Nếu không đánh dấu @Autowired vào thì sẽ không lấy ra được Out cho girl.
  *              -> Mục đích của việc autowired là tiêm Object vào cho một Object.
+ *
+ * Sử dụng @Qualifier -> để đanh dấu đâu là component sử dụng chất lượng hơn.
+ * Để tìm ra Component đạt đủ tiêu chuẩn -> "qualified" -> đạt tiêu chuẩn.
+ *
  */
 @Component
 public class Girl {
