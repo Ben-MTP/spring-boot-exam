@@ -1,4 +1,4 @@
-package com.configurationbean;
+package com.applicationconfig;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -9,11 +9,12 @@ import org.springframework.context.ApplicationContext;
  * @project spring-boot-exam
  */
 @SpringBootApplication
-public class AppDatabaseConnectionWithParam {
-    public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(AppDatabaseConnectionWithParam.class);
+public class Main {
 
-        MySQLConnector mySQLConnector = (MySQLConnector) context.getBean("mySqlConnectionWithUser");
-        mySQLConnector.connect();
+    public static void main(String[] args) {
+        ApplicationContext context = SpringApplication.run(Main.class);
+
+        DatabaseConnector mySqlConnector = (DatabaseConnector) context.getBean("mySqlConnector");
+        mySqlConnector.connect();
     }
 }
