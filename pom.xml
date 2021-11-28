@@ -5,7 +5,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-boot-1-Component-Autowired</module>
-        <module>spring-boot-9-thymeleaf-Expression-DemoFull</module>
         <module>spring-boot-1-1-injection</module>
         <module>pojo-1-intro</module>
         <module>spring-boot-11-JPA-MySQL</module>

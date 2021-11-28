@@ -1,12 +1,14 @@
-package com.manhkm.entity;
+package com.example.springboot9thymeleafexpressiondemofull;
 
-public class ProfileUser {
+/**
+ * @author ManhKM on 11/28/2021
+ * @project spring-boot-9-Thymeleaf-Expression-DemoFull
+ */
+public class Info {
     private String key;
     private String value;
 
-    public ProfileUser(){}
-
-    public ProfileUser(String key, String value) {
+    public Info(String key, String value) {
         this.key = key;
         this.value = value;
     }
