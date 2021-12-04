@@ -2,6 +2,7 @@ package com.controlerthymeleaf;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 
 /**
  * @author ManhKM on 11/28/2021
@@ -10,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class Main {
     public static void main(String[] args) {
-        SpringApplication.run(Main.class);
-        System.out.println("Running Website!!!");
+        ApplicationContext context = SpringApplication.run(Main.class);
+        System.out.println("Running Spring Boot Application!");
     }
 }

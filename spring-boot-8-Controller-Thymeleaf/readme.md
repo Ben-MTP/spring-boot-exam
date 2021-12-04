@@ -5,6 +5,14 @@
     - Cụ thể hơn là làm việc với @Controller hoặc @RestController
 
 
+## Nêu sự giống và khác nhau giữa: @Controller và @RestController.
+    1. Khác nhau ở cách sử dụng
+
+    2. Khác nhau ở cách tổ chức.
+
+
+
+
 ## Cài đặt
 
 
