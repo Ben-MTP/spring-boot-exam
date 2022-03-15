@@ -1,4 +1,4 @@
-package com.example.springbootrestwebservice1;
+package com.example.webservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

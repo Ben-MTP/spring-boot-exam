@@ -1,4 +1,4 @@
-package com.example.springbootrestwebservice1.service;
+package com.example.webservice.entity;
 
 import javax.persistence.*;
 
