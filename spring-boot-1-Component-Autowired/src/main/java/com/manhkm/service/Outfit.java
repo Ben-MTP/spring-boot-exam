@@ -1,4 +1,4 @@
-package com.manhkm;
+package com.manhkm.service;
 
 /**
  * Mục đích tạo ra Interface Outfit.

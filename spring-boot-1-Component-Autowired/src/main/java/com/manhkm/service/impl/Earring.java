@@ -1,5 +1,6 @@
-package com.manhkm;
+package com.manhkm.service.impl;
 
+import com.manhkm.service.Accessory;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -12,7 +13,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Scope("singleton")
-public class Earring implements Accessory{
+public class Earring implements Accessory {
     @Override
     public void push() {
         System.out.println("Pushed Earring in your ear!");

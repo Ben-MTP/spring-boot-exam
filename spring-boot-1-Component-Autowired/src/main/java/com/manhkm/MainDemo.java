@@ -1,5 +1,7 @@
 package com.manhkm;
 
+import com.manhkm.service.Accessory;
+import com.manhkm.service.Outfit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

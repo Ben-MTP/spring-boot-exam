@@ -1,5 +1,6 @@
-package com.manhkm;
+package com.manhkm.service.impl;
 
+import com.manhkm.service.Outfit;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +14,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @Scope("prototype")
-public class Bikini implements Outfit{
+public class Bikini implements Outfit {
     @Override
     public void wear() {
         System.out.println("Worn Bikini!");

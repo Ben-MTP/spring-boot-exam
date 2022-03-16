@@ -1,5 +1,7 @@
 package com.manhkm;
 
+import com.manhkm.service.Accessory;
+import com.manhkm.service.Outfit;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
