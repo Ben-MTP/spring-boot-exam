@@ -1,8 +1,10 @@
-package com.configurationbean;
+package com.configurationbean.entity;
 
 /**
  * @author ManhKM on 11/27/2021
  * @project spring-boot-exam
+ * ---
+ * Tạo một class cơ bản, không sử dụng @Component.
  */
 public class SimpleBean {
 

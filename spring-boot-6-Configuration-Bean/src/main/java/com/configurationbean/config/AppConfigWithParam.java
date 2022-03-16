@@ -1,5 +1,8 @@
-package com.configurationbean;
+package com.configurationbean.config;
 
+import com.configurationbean.service.DatabaseConnector;
+import com.configurationbean.service.impl.MySQLConnector;
+import com.configurationbean.entity.SimpleBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

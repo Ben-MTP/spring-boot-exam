@@ -1,11 +1,17 @@
-package com.configurationbean;
+package com.configurationbean.config;
 
+import com.configurationbean.service.DatabaseConnector;
+import com.configurationbean.service.impl.MongoDBConnector;
+import com.configurationbean.service.impl.MySQLConnector;
+import com.configurationbean.service.impl.PostgreSqlConnector;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
  * @author ManhKM on 11/27/2021
  * @project spring-boot-exam
+ * ---
+ * Thực hiện cho việc Demo ví dụ Connection với Database.
  */
 @Configuration
 public class AppConfigDatabase {

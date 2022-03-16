@@ -1,4 +1,4 @@
-package com.configurationbean;
+package com.configurationbean.service;
 
 /**
  * @author ManhKM on 11/27/2021
