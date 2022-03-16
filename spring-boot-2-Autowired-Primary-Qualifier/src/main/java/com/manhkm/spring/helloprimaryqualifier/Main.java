@@ -1,5 +1,6 @@
 package com.manhkm.spring.helloprimaryqualifier;
 
+import com.manhkm.spring.helloprimaryqualifier.service.Outfit;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -13,11 +14,12 @@ public class Main {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(Main.class);
         Outfit outfit = context.getBean(Outfit.class);
-
         System.out.println(outfit);
+
         Girl girl = context.getBean(Girl.class);
         System.out.println("Girl Instance: " + girl);
         System.out.println("Girl Outfit: " + girl.getOutfit());
+
         girl.getOutfit().wear();
     }
 }

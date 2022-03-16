@@ -1,6 +1,6 @@
-package com.manhkm.spring.helloprimaryqualifier;
+package com.manhkm.spring.helloprimaryqualifier.service.impl;
 
-import org.springframework.context.annotation.Primary;
+import com.manhkm.spring.helloprimaryqualifier.service.Outfit;
 import org.springframework.stereotype.Component;
 
 /**
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 //@Primary
-public class Bikini implements Outfit{
+public class Bikini implements Outfit {
     @Override
     public void wear() {
         System.out.println("Mac bikini");

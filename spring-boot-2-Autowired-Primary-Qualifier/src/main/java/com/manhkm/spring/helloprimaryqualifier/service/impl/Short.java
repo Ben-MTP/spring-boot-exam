@@ -1,5 +1,6 @@
-package com.manhkm.spring.helloprimaryqualifier;
+package com.manhkm.spring.helloprimaryqualifier.service.impl;
 
+import com.manhkm.spring.helloprimaryqualifier.service.Outfit;
 import org.springframework.stereotype.Component;
 
 /**
@@ -7,7 +8,7 @@ import org.springframework.stereotype.Component;
  * @project spring-boot-exam
  */
 @Component
-public class Short implements Outfit{
+public class Short implements Outfit {
     @Override
     public void wear() {
         System.out.println("Mac Short");

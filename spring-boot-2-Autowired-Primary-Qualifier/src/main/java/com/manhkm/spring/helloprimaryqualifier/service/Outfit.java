@@ -1,4 +1,4 @@
-package com.manhkm.spring.helloprimaryqualifier;
+package com.manhkm.spring.helloprimaryqualifier.service;
 
 /**
  * @author ManhKM on 11/24/2021
