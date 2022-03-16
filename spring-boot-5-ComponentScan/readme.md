@@ -15,3 +15,9 @@
 
 ## Multiple package scan
 
+
+## Question:
+    Câu 1: Nếu một Bean extend từ một bean mà Spring Boot không quản lý.
+    Vậy khi khởi tạo nó thì có thể getBean của supper được hay không?   
+        TL: Có.
+
