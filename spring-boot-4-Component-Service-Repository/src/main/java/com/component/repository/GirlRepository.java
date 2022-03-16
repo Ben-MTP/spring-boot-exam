@@ -1,6 +1,6 @@
-package com.component;
+package com.component.repository;
 
-import org.springframework.stereotype.Repository;
+import com.component.entity.Girl;
 
 /**
  * @author ManhKM on 11/26/2021

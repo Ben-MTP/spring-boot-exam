@@ -1,5 +1,7 @@
 package com.component;
 
+import com.component.entity.Girl;
+import com.component.service.impl.GirlService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

@@ -1,19 +1,17 @@
-package com.component;
+package com.component.repository.impl;
 
+import com.component.entity.Girl;
+import com.component.repository.GirlRepository;
 import org.springframework.stereotype.Repository;
 
 /**
  * @author ManhKM on 11/26/2021
  * @project spring-boot-exam
+ * Định nghĩa về cách sử dụng của @Repository
  */
 @Repository
-public class GirlRepositoryImpl implements GirlRepository{
+public class GirlRepositoryImpl implements GirlRepository {
 
-    /**
-     * Method trả về Object Girl
-     * @param name
-     * @return
-     */
     @Override
     public Girl getGirlByName(String name) {
         /**

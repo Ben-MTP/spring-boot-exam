@@ -1,9 +1,9 @@
-package com.component;
+package com.component.entity;
 
 /**
  * @author ManhKM on 11/26/2021
  * @project spring-boot-exam
- * Định nghĩa ra một Object Girl
+ * Định nghĩa Entity - Định nghĩa ra một Object Girl
  */
 public class Girl {
     private String name;
