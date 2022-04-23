@@ -8,6 +8,11 @@ import org.springframework.context.ConfigurableApplicationContext;
 /**
  * @author ManhKM on 11/26/2021
  * @project spring-boot-exam
+ * ---
+ * Tại sao Main chạy 2 lần.
+ *      -> Lần 1: Do người chạy bằng tay
+ *      -> Lần 2: Do Spring Boot chạy.
+ *              SpringApplication.run(Main.class, args);
  */
 @SpringBootApplication
 public class Main {
