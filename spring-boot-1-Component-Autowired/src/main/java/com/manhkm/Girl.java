@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
  * @Component
  * Là một Annotation (chú thích) đánh dấu trên các Class để
  *      Spring biết nó là một Bean.
+ *      Từ đây Girl được coi như là một Bean được quản lý bằng Container
  *
  * ----
  * Sử dụng @Autowired -> tự động Injection Bean khi cần sử dụng.

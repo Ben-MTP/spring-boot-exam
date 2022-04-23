@@ -6,13 +6,14 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.5.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath />
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.manhkm</groupId>
     <artifactId>spring-boot-1-Component-Autowired</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <description>Everything about Spring Boot</description>
+    <description>Everything about Spring Boot Component and Autowire</description>
 
     <properties>
         <java.version>1.8</java.version>
@@ -53,5 +54,7 @@
             </build>
         </profile>
     </profiles>
+
+    <!--Cấu hình build project có chứa lib + code-->
 
 </project>

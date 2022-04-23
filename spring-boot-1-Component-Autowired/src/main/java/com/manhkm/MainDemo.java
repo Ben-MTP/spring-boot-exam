@@ -39,9 +39,14 @@ public class MainDemo {
 
         Girl girl = context.getBean(Girl.class);
         System.out.println("Girl Instance: " + girl);
-        System.out.println("Girl Outfit: " + girl.outfit);
+        System.out.println("Girl Outfit: " + girl.outfit);      //prototype
         System.out.println("Girl accessory: " + girl.accessory);
 
+        /**
+         * Thực hiện 2 động tác trên Girl
+         *      1. Mặc
+         *      2. Đeo
+         */
         girl.outfit.wear();
         girl.accessory.push();
     }
