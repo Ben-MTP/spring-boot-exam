@@ -46,6 +46,14 @@ public class MainDemo {
          * Thực hiện 2 động tác trên Girl
          *      1. Mặc
          *      2. Đeo
+         *
+         * Instance outfit: com.manhkm.service.impl.Bikini@2427e004
+         * Instance accessory: com.manhkm.service.impl.Earring@5ebd56e9
+         * Girl Instance: com.manhkm.Girl@63f34b70
+         * Girl Outfit: com.manhkm.service.impl.Bikini@641856
+         * Girl accessory: com.manhkm.service.impl.Earring@5ebd56e9
+         * Worn Bikini!
+         * Pushed Earring in your ear!
          */
         girl.outfit.wear();
         girl.accessory.push();
