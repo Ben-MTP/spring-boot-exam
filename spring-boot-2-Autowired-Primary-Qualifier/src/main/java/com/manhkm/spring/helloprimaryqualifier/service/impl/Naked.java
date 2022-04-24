@@ -5,13 +5,14 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 /**
- * @author ManhKM on 11/24/2021
- * @project spring-boot-exam
+ * @author ManhKM on 4/23/2022
+ * @project spring-boot-2-Autowired-Primary-Qualifier
  */
-@Component("bikini")
-public class Bikini implements Outfit {
+@Component("naked")
+public class Naked implements Outfit {
+
     @Override
     public void wear() {
-        System.out.println("Mac bikini");
+        System.out.println("Đang không mặc gì cả");
     }
 }

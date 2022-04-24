@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
  * @author ManhKM on 11/24/2021
  * @project spring-boot-exam
  */
-@Component
+@Component("short")
 public class Short implements Outfit {
     @Override
     public void wear() {

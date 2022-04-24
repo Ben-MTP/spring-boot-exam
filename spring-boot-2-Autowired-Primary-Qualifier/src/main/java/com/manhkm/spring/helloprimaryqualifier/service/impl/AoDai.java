@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  *      Giúp nó luôn ưu tiên lựa chọn trong trường hợp có nhiều Bean cùng loại.
  */
 @Component("aodai")
-@Primary
+//@Primary
 public class AoDai implements Outfit {
     @Override
     public void wear() {

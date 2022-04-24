@@ -26,6 +26,24 @@
 ## PreDestroy
 
 ## Bean Life Cycle
+    Constructor -> Setter method -> ...
+
+## Example
+    Tìm tiếp ứng dụng của 2 annotation:
+        + PostConstructor
+        + PreDestroy
+    
+    The init() method @PostConstruct is called.
+    After the message property is set, and the cleanUp() method -> @PreDestroy is call the context.close().
+
 
 ## Tham khảo:
-https://loda.me/articles/sb3-spring-bean-life-cycle-postconstruct-va-predestroy
+    https://loda.me/articles/sb3-spring-bean-life-cycle-postconstruct-va-predestroy
+
+    https://www.baeldung.com/spring-postconstruct-predestroy
+
+    https://mkyong.com/spring/spring-postconstruct-and-predestroy-example/
+
+    https://www.journaldev.com/21206/spring-postconstruct-predestroy
+
+    

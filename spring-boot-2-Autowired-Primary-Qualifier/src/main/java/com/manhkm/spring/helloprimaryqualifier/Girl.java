@@ -16,20 +16,14 @@ import org.springframework.stereotype.Component;
  *      + Nếu không đánh dấu @Autowired vào thì sẽ không lấy ra được Out cho girl.
  *              -> Mục đích của việc autowired là tiêm Object vào cho một Object.
  *
- * ---
+ * --------
  * Cách sử dụng @Qualifier
  * Xác định chính xác tên của một Bean mà muốn chỉ định inject.
+ * --------
+ * Nếu không sử dụng @Autowied thì có thể dụng Constructor hoặc Setter để truyền Object tương ứng vào.
  */
 @Component
 public class Girl {
-
-    /**
-     * Case 1: Sử dụng @Autowired cho instance
-     * Không có constructor có tham số, chỉ có constructor mặc định.
-     *
-     */
-
-    private Outfit outfit;
 
     /**
      * Case 2: Khi đi qua constructor không tham số.
@@ -40,8 +34,15 @@ public class Girl {
         System.out.println(">>>> Đi qua constructor không tham số");
     }
 
-    @Autowired
-    public Girl(Outfit outfit) {
+    /**
+     * Case 1: Sử dụng @Autowired cho instance
+     * Không có constructor có tham số, chỉ có constructor mặc định.
+     *
+     */
+    // @Autowired
+    Outfit outfit;
+
+    public Girl(@Qualifier("naked") Outfit outfit) {
         System.out.println(">>>> Đi qua constructor 1 tham số!!!");
         this.outfit = outfit;
     }
