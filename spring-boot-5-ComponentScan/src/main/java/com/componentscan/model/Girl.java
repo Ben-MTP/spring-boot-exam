@@ -1,4 +1,4 @@
-package com.componentscan;
+package com.componentscan.model;
 
 import org.springframework.stereotype.Component;
 

@@ -1,5 +1,6 @@
 package com.componentscan;
 
+import com.componentscan.model.Girl;
 import com.componentscan.others.OtherGirl;
 import com.componentscan.others1.Student;
 import org.springframework.boot.SpringApplication;
@@ -10,7 +11,10 @@ import org.springframework.context.annotation.ComponentScan;
 /**
  * @author ManhKM on 11/26/2021
  * @project spring-boot-exam
- * @ComponentScan("com.componentscan.others")
+ * -----
+ * Cách 1: + @ComponentScan("com.componentscan.others")
+ *      Một Annotation riêng biệt
+ * Cách 2: + scanBasePackages -> là một tính năng con trong: SpringBootApplication
  */
 
 @SpringBootApplication(scanBasePackages = "com.componentscan.others1")

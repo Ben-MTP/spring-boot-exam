@@ -1,10 +1,10 @@
 ## Default:
-    Cách là Spring Boot tìm kiếm ra các Bean của nó.    
+    Cách là Spring Boot tìm kiếm ra các Bean của nó như thế nào.    
     Quét các class cùng cấp hoặc dưới cấp nó.
 
 ## ComponentScan
-    Dùng với hàm main.
-    Sử dụng một Annotation khác: @ComponentScan("name_package")
+    Trong hàm main.
+        Sử dụng một Annotation khác: @ComponentScan("name_package")
 
 ## Cách cài đặt
     
@@ -14,6 +14,10 @@
     Sử dụng trong Annotation: @SpringBootApplication(scanBasePackage = "name_package")
 
 ## Multiple package scan
+    Làm thế nào để quyest nhiều package cùng một lúc, chứ không phải chỉ 1 package thôi.
+    @ComponentScan({"me.loda.spring.componentscan.others2","me.loda.spring.componentscan.others"})
+    Hoặc:
+    @SpringBootApplication(scanBasePackages = {"me.loda.spring.componentscan.others", "me.loda.spring.componentscan.others2"})
 
 
 ## Question:
@@ -21,3 +25,13 @@
     Vậy khi khởi tạo nó thì có thể getBean của supper được hay không?   
         TL: Có.
 
+    Câu 2: Có bao nhiêu cách quản lý Bean?
+    Java Code, xml code.
+    
+    Câu 3: Đánh dấu class là một Component
+                -> Định nghĩa là một Bean và cần ApplicationContext quản lý ngay.
+                -> Bean -> vòng đời của Bean.
+                -> Vòng đời của một Bean từ khi khởi tạo đến khi kết thúc.
+           Đánh dấu class đó là một Configuration
+                -> định nghĩa ra các Bean bên trong
+            

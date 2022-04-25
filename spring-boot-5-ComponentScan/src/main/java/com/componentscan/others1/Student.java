@@ -1,9 +1,7 @@
 package com.componentscan.others1;
 
-import com.componentscan.Girl;
 import com.componentscan.others.OtherGirl;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * @author ManhKM on 3/16/2022
