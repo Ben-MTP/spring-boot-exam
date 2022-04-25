@@ -6,16 +6,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 /**
- * @author ManhKM on 11/28/2021
- * @project spring-boot-exam
+ * @author ManhKM on 4/25/2022
+ * @project spring-boot-7-ApplicationConfig-Value
  */
 @SpringBootApplication
-public class Main {
-
+public class AppTestMySQLConfig {
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(Main.class);
+        ApplicationContext context = SpringApplication.run(AppTestMySQLConfig.class, args);
 
-        DatabaseConnector mySqlConnector = (DatabaseConnector) context.getBean("mySqlConnector");
-        mySqlConnector.connect();
+        DatabaseConnector databaseConnector = (DatabaseConnector) context.getBean("mysqlConfigure");
+        databaseConnector.connect();
+
     }
 }

@@ -3,7 +3,7 @@
     - Nếu được thì tốt hơn là đặt chúng ở ngoài
     - Vì nếu thay đổi môi trường, hoặc muốn đổi lại giá trị của chúng.
         Thì không phải tìm đọc trong code nữa.
-    - File cấu hình mục đích là để làm vậy.
+    - File cấu hình (application.properties) mục đích là để làm vậy.
 
 ## Cài đặt
     - Vẫn sử dụng phiên bản Springboot + java 8
@@ -17,6 +17,7 @@
 
 ## @Value
     - Sử dụng đối với lúc khai báo biến -> đặt với giá trị key-value trong file properties.
+    - Mục đích lấy giát rị config từ file application.properties để dùng.
 
 ## Ví dụ
     - Update lại ví dụ sử dụng DatabaseConnector.
@@ -24,4 +25,11 @@
 ## Kết luận
     - Có thể lấy giá trị từ cấu hình để load các thứ khác.
     - Làm thế nào get giá trị từ các file properties khác.
+
+## Câu hỏi:
+    Các loại file có thể đặt là configuration trong project
+        1. xxx.properties
+        2. xxx.yml
+        3. xxx.xml
+
 

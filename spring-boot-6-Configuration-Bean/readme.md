@@ -72,8 +72,8 @@
         Có tính logic.
     + Tách biệt rõ ràng các phần configuration + cũng như logic sử dụng.
 
-
-
+    + Việc cấu hình cho Spring Security
+    
 ## Reference Document
     [1] Spring-boot-6 @Configuration - @Bean
         https://loda.netlify.app/spring-boot-6-configuration-va-bean-loda1557885506910/

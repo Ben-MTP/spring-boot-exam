@@ -1,4 +1,4 @@
-package com.applicationconfig;
+package com.applicationconfig.entity;
 
 /**
  * @author ManhKM on 11/28/2021
