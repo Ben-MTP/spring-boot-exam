@@ -1,6 +1,6 @@
 package com.component.repository.impl;
 
-import com.component.entity.Girl;
+import com.component.model.Girl;
 import com.component.repository.GirlRepository;
 import org.springframework.stereotype.Repository;
 
@@ -16,7 +16,9 @@ public class GirlRepositoryImpl implements GirlRepository {
     public Girl getGirlByName(String name) {
         /**
          * Query in CSDL -> get Database with name = name.
+         * Giả định Database trả về một dữ liệu trùng với dữ liệu truyền vào
          */
-        return new Girl(name);
+        String data = name + "-from-database";
+        return new Girl(data);
     }
 }

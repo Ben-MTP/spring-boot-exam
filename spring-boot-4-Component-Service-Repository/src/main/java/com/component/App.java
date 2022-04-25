@@ -1,6 +1,6 @@
 package com.component;
 
-import com.component.entity.Girl;
+import com.component.model.Girl;
 import com.component.service.impl.GirlService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,10 +16,15 @@ public class App {
     public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(App.class, args);
 
+        /**
+         * Trước đó: GirlService đã được đánh dấu @Service -> và được Container Quản lý.
+         * Để dùng nó: context.getBean...
+         */
         GirlService girlService = context.getBean(GirlService.class);
 
         Girl girl = girlService.getRandomGirl();
 
         System.out.println(girl);
+        // Girl{name='TOETIPKWOA-from-database'}
     }
 }
