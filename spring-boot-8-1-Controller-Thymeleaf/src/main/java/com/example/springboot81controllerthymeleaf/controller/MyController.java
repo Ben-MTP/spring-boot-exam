@@ -18,11 +18,15 @@ public class MyController {
         return "index";
     }
 
+    @GetMapping("/about")
+    public String about(){
+        return "about";
+    }
+
 
     @GetMapping("/hello")
     public String sayHello(
-            @RequestParam(name="username", required = false, defaultValue = "") String username,
-            Model model){
+            @RequestParam(name="username", required = false, defaultValue = "") String username, Model model){
         System.out.println("Call method sayHello()");
         model.addAttribute("username", username);
         return "hello";

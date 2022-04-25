@@ -31,6 +31,23 @@
 
 ## Giải thích nguyên lý 2
     https://loda.me/articles/sb8-tao-web-helloworld-voi-controller-thymeleaf
-
+![img.png](img.png)
+    
+    Model ở đây là một Object được Spring Boot đính kèm trong mỗi response.
+    Model chứa các thông tin mà bạn muốn trả về và Template Engine sẽ trích xuất thông tin này
+        ra thành html và đưa cho người dùng.
+    
+    Lấy giá trị trong Module -> <h1 th:text="'Hello, ' + ${name}"></h1>
+    
+    
 ## Kết luận
     - Controller rất quan trọng
+
+## Câu hỏi:
+    1. Các syntax chính trong Template Enginer gồm có những gì?
+    
+    2. Có thể dùng Template Enginer - Thymeleaf này để generate dữ liệu báo cáo hay không?
+        Nếu có thì cách làm như nào?
+        TL:
+    Nó sẽ lấy dữ liệu từ phía model -> nên khả năng lấy được là rất cao.
+    
