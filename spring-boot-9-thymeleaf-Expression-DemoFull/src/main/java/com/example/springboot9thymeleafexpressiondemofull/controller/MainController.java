@@ -21,7 +21,10 @@ public class MainController {
         return "index";
     }
 
-    //getProfile:
+    /**
+     * Mục đích khi truyền dữ liệu đi sẽ là truyền cả một cục dữ liệu liên quan đến Model
+     *      thông qua việc: model.addAttribute...
+     */
     @GetMapping("/profile")
     public String profile(Model model){
 
