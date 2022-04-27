@@ -1,13 +1,13 @@
-package com.springboot.springboot10webtodothymeleaf;
+package com.springboot.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringBoot10WebtodoThymeleafApplication {
+public class App {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBoot10WebtodoThymeleafApplication.class, args);
+        SpringApplication.run(App.class, args);
         System.out.println("Spring Boot 10 RequestMapping - PostMapping-ModelAttribute-RequestParam-WebTodo-Thymeleaf");
     }
 

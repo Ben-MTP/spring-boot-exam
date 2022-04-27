@@ -1,6 +1,6 @@
-package com.springboot.springboot10webtodothymeleaf.com.controller;
+package com.springboot.demo.com.controller;
 
-import com.springboot.springboot10webtodothymeleaf.com.service.Todo;
+import com.springboot.demo.com.entity.Todo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -16,6 +16,11 @@ import java.util.List;
 @Controller
 public class WebController {
 
+    /**
+     * Sử dụng tạm List để chứa danh sách các công việc
+     * Cái chính vẫn phải lấy từ Database lên -> lưu trữ xuống Database.
+     * Cách này chỉ dùng làm DEMO.
+     */
     List<Todo> todoList = new ArrayList<>();
 
     @GetMapping("/")
@@ -23,6 +28,15 @@ public class WebController {
         return "index";
     }
 
+    /**
+     * @RequestParam dùng để đánh dấu một biến là request param trong request gửi lên server.
+     * Nó sẽ gán dữ liệu của param-name tương ứng vào biến
+     * Ví dụ: http://localhost:8080/listTodo?limit=2
+     *      thì ?limit=2 là RequestParam
+     *      SpringBoot sẽ tự xử lý và gán số 2 vào biến Integer limit hộ chúng ta.
+     *      Nếu chúng ta không gửi lên thì limit sẽ là null.
+     *
+     */
     @GetMapping("/listTodo")
     public String index(Model model, @RequestParam(value = "limit", required = false) Integer limit){
         if(limit != null){
