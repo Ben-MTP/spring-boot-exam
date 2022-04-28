@@ -10,6 +10,9 @@ import org.springframework.web.context.request.WebRequest;
 /**
  * @author ManhKM on 8/12/2021
  * @project spring-boot-exam
+ * -----
+ * ApiExceptionHandler -> nơi quản lý tất cả các Exception.
+ *
  */
 @RestControllerAdvice
 public class ApiExceptionHandler {
@@ -22,10 +25,15 @@ public class ApiExceptionHandler {
     }
 
 
+    /**
+     * Trong đó IndexOutOfBoundsException sẽ là lỗi trả về cho Exception khi làm việc với Java.
+     * Lúc này sẽ trường hợp lỗi và xử lý nó.xxxxx
+     * @ExceptionHandler
+     */
     @ExceptionHandler(IndexOutOfBoundsException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
     public ErrorMessage TodoException(Exception ex, WebRequest request){
 
-        return new ErrorMessage(10100, "Đối tượng không tồn tại");
+        return new ErrorMessage(5001, "Đối tượng không tồn tại");
     }
 }
