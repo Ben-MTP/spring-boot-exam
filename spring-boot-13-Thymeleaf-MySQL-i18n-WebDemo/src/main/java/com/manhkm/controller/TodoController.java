@@ -15,15 +15,27 @@ import java.util.Optional;
 /**
  * @author ManhKM on 8/9/2021
  * @project spring-boot-exam
+ * -----
+ * Tầng controller nơi đón nhận các request từ phía người dùng.
+ * và chuyển tiếp luồng xử lý xuống tầng Service.
  */
 @Controller
 public class TodoController {
+
     @Autowired
     private TodoService todoService;
 
+    /**
+     * @RequestParam dùng để đánh dấu một biến là request param -> limit.
+     *      required -> false -> không yêu cầu phải bắt buộc truyền vào.
+     * Biến này tiếp nhận thông qua request Get và gửi lên Server.
+     *
+     */
     @GetMapping("/listTodo")
     public String index(Model model, @RequestParam(value = "limit", required = false) Integer limit) {
-        // Trả về đối tượng todoList.
+        /**
+         * Trả về đối tượng todoList.
+         */
         model.addAttribute("todoList", todoService.findAll(limit));
         // Trả về template "listTodo.html"
         return "listTodo";
