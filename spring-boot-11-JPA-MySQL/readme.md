@@ -42,8 +42,20 @@
     
 
 ## Demo
+    + Demo khởi tạo Database MySQL + bảng + fake Data.
+    + Thực hiện Tạo User -> nó đóng vai trò là Model -> chịu trách nhiệm là dữ liệu trung chuyển giữa Service và Database.
+    + Thực hiện tạo UserRepository -> JpaRepository -> thực hiện các method liên quan đến Database.
+    + Thực hiện các thao tác CRUD basic với table đó.
+
+## Câu hỏi:
+    + Viết câu lệnh NativeSQL sẽ như thế nào
+    + Hiraki đóng vai trò gì trong vụ kết nối này -> thấy có connection của nó.
+    + Các bảng có quan hệ: 1-1, 1-N, N-N sẽ được thể hiện như thế nào trong JavaCode.
+    + Các Annotation quan trong trong Hibernate cần phải hiểu.
 
 
 ## Reference document
+    「Spring Boot #11」 Hướng dẫn Spring Boot JPA + MySQL   
+    https://loda.netlify.app/spring-boot-11-huong-dan-spring-boot-jpa-my-sql-loda1558687596060/
 
 
