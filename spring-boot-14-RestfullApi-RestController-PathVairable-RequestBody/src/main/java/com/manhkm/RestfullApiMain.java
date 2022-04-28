@@ -11,7 +11,7 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class RestfullApiMain {
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(RestfullApiMain.class);
+        SpringApplication.run(RestfullApiMain.class);
         System.out.println("Restfull Api - RestController - PathVariable Running....");
     }
 }

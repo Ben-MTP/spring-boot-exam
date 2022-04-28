@@ -10,4 +10,10 @@ import lombok.Data;
 public class Todo {
     private String title;
     private String detail;
+
+    public Todo(){}
+    public Todo(String title, String detail){
+        this.title = title;
+        this.detail = detail;
+    }
 }
