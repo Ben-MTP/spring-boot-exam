@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    username: manhkm
+    password: manhkm
+    url: jdbc:mysql://10.127.24.12:8080/news?useSSL=false&characterEncoding=UTF-8
