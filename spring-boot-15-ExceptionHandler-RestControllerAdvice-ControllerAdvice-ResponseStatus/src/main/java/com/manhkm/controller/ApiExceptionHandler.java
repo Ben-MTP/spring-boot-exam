@@ -28,7 +28,12 @@ public class ApiExceptionHandler {
     /**
      * Trong đó IndexOutOfBoundsException sẽ là lỗi trả về cho Exception khi làm việc với Java.
      * Lúc này sẽ trường hợp lỗi và xử lý nó.xxxxx
-     * @ExceptionHandler
+     * @ExceptionHandler làm mục đích chính là gì
+     * @ResponseStatus làm mục đích chính là gì?
+     * -----
+     * WebRequest mục đích gì
+     * ErrorMessage làm mục đích gì
+     *
      */
     @ExceptionHandler(IndexOutOfBoundsException.class)
     @ResponseStatus(value = HttpStatus.BAD_REQUEST)
