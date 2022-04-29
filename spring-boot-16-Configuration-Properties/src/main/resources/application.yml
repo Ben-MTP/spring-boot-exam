@@ -1,0 +1,20 @@
+loda:
+  email: manhkm@neo.vn
+  googleAnalyticsId: U-xxxxabc
+  authors:
+    - loda
+    - manhkm
+    - atom
+    - hieuvt
+  exampleMap:
+    key1: hello
+    key2: world
+    key3: neo
+    key4: uet-vnu
+  personList:
+     -
+      name: admin
+      age: 18
+     -
+      name: manhkm
+      age: 19
