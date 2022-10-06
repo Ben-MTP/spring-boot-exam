@@ -1,0 +1,27 @@
+server:
+  port: 8081
+  tomcat:
+    accept-count: 3000
+    max-connections: 20000
+    connection-timeout:
+      seconds: 45
+    threads:
+      max: 3000
+      min-spare: 10
+spring:
+  datasource:
+    #    jdbc-url: jdbc:oracle:thin:@(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=10.252.10.246)(PORT=1522))(ADDRESS=(PROTOCOL=TCP)(HOST=10.252.10.246)(PORT=1522))(LOAD_BALANCE=true)(FAILOVER=true)(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ocs)(FAILOVER_MODE=(TYPE=SELECT)(METHOD=BASIC))))
+    url: jdbc:mysql://localhost:3306/spring_security_demo_plaintext
+    username: root
+    password: 12345678aA
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    minimum-idle: 1
+    maximum-pool-size: 5
+    connection-timeout: 600000
+    idle-timeout: 600000
+    auto-commit: false
+    max-lifetime: 1800000
+    validation-timeout: 600000
+    leak-detection-threshold: 100000
+    pool-name: Pool-OCS
+    data-source-properties: v$session.program=Agent
